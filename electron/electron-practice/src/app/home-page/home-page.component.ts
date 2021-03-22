@@ -14,8 +14,8 @@ export class HomePageComponent implements OnInit {
 
     }
 
-    goToElectronTest() {
-        this.router.navigateByUrl('electron');
-    }
+    goToElectron() {
+        this.router.navigateByUrl('/electron');
+    } 
 
 }

@@ -21,11 +21,12 @@
     <div class="controls-wrapper">
         <div>
             <label>Seconds</label>
-            <input class="input" placeholder="number of seconds" type="text" [(ngModel)]="max" (keydown)="reset()">
+            <input matInput class="input" placeholder="number of seconds" type="text" [(ngModel)]="max" (keydown)="reset()">
         </div>
 
-        <button class="button is-info" *ngIf="currentVal <= 0" (click)="start()">Start</button>
-        <button class="button is-danger" *ngIf="!isFinished" (click)="finish()">Finish</button>
+        <button mat-button color="primary" class="button is-info" *ngIf="currentVal <= 0" (click)="start()">Start</button>
+        <button mat-button color="warn" class="button is-danger" *ngIf="!isFinished" (click)="finish()">Finish</button>
+        <button mat-button color="basic" class="button is-danger" (click)="goToHome()">Back to Home</button>
     </div>
 
 

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { takeWhile, map } from 'rxjs/operators';
 import { interval } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
@@ -8,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./electron-test.component.scss']
 })
 export class ElectronTestComponent implements OnInit {
+
+	constructor(private router: Router) {
+
+	}
 
 	max = 1;
 	current = 0;
@@ -27,6 +32,10 @@ export class ElectronTestComponent implements OnInit {
 
 	reset() {
 		this.current = 0;
+	}
+
+	goToHome() {
+		this.router.navigateByUrl('/home');
 	}
 
 	get maxVal() {

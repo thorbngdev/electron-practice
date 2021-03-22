@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { interval } from 'rxjs';
-import { map, takeWhile } from 'rxjs/operators';
 
 @Component({
     selector: 'app-root',
@@ -8,6 +6,5 @@ import { map, takeWhile } from 'rxjs/operators';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    
 
 }

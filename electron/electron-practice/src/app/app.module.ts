@@ -1,3 +1,5 @@
+import { HomePageRoutingModule } from './home-page/home-page-routing.module';
+import { ElectronTestRoutingModule } from './electron-test/electron-test-routing.module';
 import { MaterialModule } from './material/material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -22,7 +24,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     RoundProgressModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ElectronTestRoutingModule,
+    HomePageRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
